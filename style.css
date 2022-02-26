@@ -32,6 +32,8 @@ ul {
     list-style: none;
 }
 
+/* Header */
+
 header {
     background-color: var(--color-background-first);
     color: var(--color-text-first);
@@ -79,6 +81,15 @@ header {
     display: none;
 }
 
+/* /Header */
+/* Main screen */
+.main_screen {
+    height: calc(100vh - 110px);
+    background-image: url('images/main_banner.jpg');
+    background-size: cover;
+    color: var(--color-text-first);
+}
+/* /Main screen */
 
 @media screen and (max-width: 1024px) {
     .header_menu {
