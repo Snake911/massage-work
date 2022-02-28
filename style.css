@@ -23,9 +23,22 @@ body {
     position: relative;
 }
 
+h1 {
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
 a {
     text-decoration: none;
     color: inherit;
+}
+
+button {
+    font-size: 1.25rem;
+    background-image: var(--main-gradient);
+    padding: 0.625rem 1.875rem;
+    border: 0;
+    cursor: pointer;
 }
 
 ul {
@@ -87,7 +100,25 @@ header {
     height: calc(100vh - 110px);
     background-image: url('images/main_banner.jpg');
     background-size: cover;
+    background-position: center;
     color: var(--color-text-first);
+}
+
+.main_screen__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+}
+
+.main_screen__container h1 {
+    margin-bottom: 10px;
+}
+
+.main_screen__container p {
+    font-size: 1.125rem;
+    margin-bottom: 60px;
 }
 /* /Main screen */
 
