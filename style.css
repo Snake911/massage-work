@@ -1,4 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Zen+Kaku+Gothic+Antique:wght@400;700&display=swap');
+@font-face {
+	font-family: 'Oswald';
+	src: local('Oswald'),
+		url('/fonts/Oswald-VariableFont_wght.ttf'); 
+}
+
+@font-face {
+	font-family: 'Zen Kaku Gothic Antique';
+    font-weight: normal;
+	src: local('Zen Kaku Gothic Antique'),
+		url('/fonts/ZenKakuGothicAntique-Regular.ttf'); 
+}
+
+@font-face {
+	font-family: 'Zen Kaku Gothic Antique';
+    font-weight: bold;
+	src: local('Zen Kaku Gothic Antique'),
+		url('/fonts/ZenKakuGothicAntique-Bold.ttf'); 
+}
 
 :root {
     font-size: 16px;
@@ -8,7 +26,6 @@
     --color-background-second: #ffffff;
     --logo-gradient: linear-gradient(116.57deg, #E7DC79 33.33%, #B66D1E 100%);
     --main-gradient: linear-gradient(116.57deg, #FFE2AE 33.33%, #CCA04A 100%);
-
 }
 
 * {
@@ -28,6 +45,19 @@ h1 {
     font-size: 2.5rem;
 }
 
+h2 {
+    font-size: 1.875rem;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -36,7 +66,7 @@ a {
 button {
     font-size: 1.25rem;
     background-image: var(--main-gradient);
-    padding: 0.625rem 1.875rem;
+    padding: 0.3125rem 1.875rem 0.625rem;
     border: 0;
     cursor: pointer;
 }
@@ -114,6 +144,7 @@ header {
 
 .main_screen__container h1 {
     margin-bottom: 10px;
+    text-shadow: 0 0 50px black;
 }
 
 .main_screen__container p {
@@ -123,6 +154,15 @@ header {
 /* /Main screen */
 
 @media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 1.875rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
     .header_menu {
         display: none;
     }
@@ -185,5 +225,30 @@ header {
 
     .header_menu__mobile__container.active {
         right: 0%;
+    }
+
+    .header_menu__mobile {
+        display: grid;
+        gap: 10px;
+    }
+
+    .main_screen__container {
+        align-items: center;
+        text-align: center;
+    }
+
+    .main_screen__container h1 {
+        margin-bottom: 5px;
+    }
+
+    .main_screen__container p {
+        font-size: 1rem;
+        margin-bottom: 40px;
+    }
+
+    .icon_without {
+        display: block;
+        width: 36px;
+        height: 36px;
     }
 }
