@@ -153,6 +153,35 @@ header {
 }
 /* /Main screen */
 
+/* Without */
+.content_without {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-flow: dense;
+    max-height: 700px;
+}
+
+.content_without img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content_without img:first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.content_without img:nth-child(2) {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+/* /Without */
+
 @media screen and (max-width: 1024px) {
     h1 {
         font-size: 1.875rem;
