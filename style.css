@@ -53,6 +53,10 @@ h2 {
     gap: 10px;
 }
 
+h3 {
+    font-size: 1.25rem;
+}
+
 section {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -181,6 +185,33 @@ header {
     grid-row-end: 3;
 }
 /* /Without */
+/* Terms */
+.terms {
+    background-image: url('images/terms.jpg');
+    color: var(--color-text-first);
+    background-position: center;
+    background-size: cover;
+}
+
+.terms_container {
+    max-width: 540px;
+    background-color:  rgba(33, 33, 33, .85);
+    padding: 70px 10px;
+    text-align: center;
+}
+
+.terms_container ul {
+    margin-bottom: 60px;
+}
+
+.terms_container ul li {
+    margin-bottom: 40px;
+}
+
+.terms_container ul li img {
+    margin-bottom: 10px;
+}
+/* /Terms */
 
 @media screen and (max-width: 1024px) {
     h1 {
