@@ -6,4 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
         burger.classList.toggle('active');
         mobileMenu.classList.toggle('active');
     });
+
+    $('#about_slider').owlCarousel({
+        loop:true,
+        nav:true,
+        dots: false,
+        items: 1
+    })
 });
