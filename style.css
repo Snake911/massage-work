@@ -223,11 +223,11 @@ header {
     grid-template-columns: calc(50% + 85px) calc(50% - 105px);
     gap: 30px;
     align-items: center;    
+    margin-bottom: 90px;  
 }
 
 .about_slider__container {
     position: relative;
-    margin-bottom: 90px;
 }
 
 .about_slider__container .owl-nav {
@@ -276,7 +276,7 @@ header {
 .about_slider__container img {
     display: block;
     width: 100%;
-    height: 470px;
+    max-height: 470px;
     object-fit: cover;
 }
 
@@ -286,7 +286,85 @@ header {
 }
 /* /About */
 
+/* Requirements */
+.requirements {
+    background-image: url('images/requirements.jpg');
+    color: var(--color-text-first);
+    background-position: center;
+    background-size: cover;
+}
+/* /Requirements */
+/* Request */
+.request {
+    background-image: url('images/request.jpg');
+    color: var(--color-text-first);
+    background-position: center;
+    background-size: cover;
+}
+
+.request_container {
+    max-width: 540px;
+    background-color:  rgba(33, 33, 33, .85);
+    padding: 100px 140px;
+    text-align: center;
+    margin: auto;
+}
+
+.request_container h2 {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.request_container p {
+    font-size: 1.125rem;
+    margin-bottom: 60px;
+}
+/* Request */
+
+/* Contacts */
+.contacts {
+    padding-bottom: 0;
+}
+.contacts_container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.contacts_map {
+    width: 100%;
+    max-width: 730px;
+    max-height: 620px;
+    margin: auto;
+}
+
+.contacts_info {
+    display: grid;
+    gap: 30px;
+}
+
+.contacts_row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.contacts_social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 @media screen and (max-width: 1024px) {
+
+    section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
     h1 {
         font-size: 1.875rem;
     }
@@ -362,7 +440,7 @@ header {
 
     .header_menu__mobile {
         display: grid;
-        gap: 10px;
+        gap: 30px;
     }
 
     .main_screen__container {
@@ -383,6 +461,39 @@ header {
         display: block;
         width: 36px;
         height: 36px;
+    }
+
+    .about_container {
+        grid-template-columns: 100%;   
+        margin-bottom: 0px;  
+    }
+
+    .about_slider__container .owl-nav {
+        position: static;
+        transform: none;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .about_text .button {
+        max-width: 175px;
+        margin: auto;
+        margin-top: 40px;
+        display: block;
+    }
+
+    .request_container {
+        padding: 60px 30px;
+    }
+
+    .request_container p {
+        font-size: 1rem;
+        margin-bottom: 40px;
+    }
+
+    .contacts_container {
+        display: grid;
+        gap: 20px;
     }
 }
 
