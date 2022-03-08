@@ -16,21 +16,22 @@
         <div class="wrapper header_container">
             <div class="header_logo">Алиса</div>
             <ul class="header_menu">
-                <li><a href="#">Условия работы</a></li>
-                <li><a href="#">О салоне</a></li>
-                <li><a href="#">Требования</a></li>
-                <li><a href="#">Контакты</a></li>
-                <li><a href="#">Подать заявку</a></li>
+                <li><a href="#terms">Условия работы</a></li>
+                <li><a href="#about">О салоне</a></li>
+                <li><a href="#requirements">Требования</a></li>
+                <li><a href="#request">Подать заявку</a></li>
+                <li><a href="#contacts">Контакты</a></li>                
             </ul>
             <div class="burger" id="burger"></div>
         </div>
         <div class="header_menu__mobile__container" id="menu_mobile">
             <ul class="header_menu__mobile">
-                <li><a href="#">Условия работы</a></li>
-                <li><a href="#">О салоне</a></li>
-                <li><a href="#">Требования</a></li>
-                <li><a href="#">Контакты</a></li>
-                <li><a href="#">Подать заявку</a></li>
+                <li><a href="#terms">Условия работы</a></li>
+                <li><a href="#about">О салоне</a></li>
+                <li><a href="#requirements">Требования</a></li>
+                <li><a href="#request">Подать заявку</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+                
             </ul>
         </div>
     </header>
@@ -51,7 +52,7 @@
                 <img src="images/without_4.jpg" alt="">
             </div>
         </section>
-        <section class="terms">
+        <section class="terms" id="terms">
             <div class="wrapper">
                 <h2>Условия работы</h2>
                 <div class="terms_container">
@@ -81,7 +82,7 @@
                 </div>
             </div>
         </section>
-        <section class="about wrapper">
+        <section class="about wrapper" id="about">
             <h2>О салоне</h2>
             <div class="about_container">
                 <div class="about_slider__container">
@@ -99,7 +100,7 @@
                 </div>
             </div>
         </section>
-        <section class="requirements">
+        <section class="requirements" id="requirements">
             <div class="wrapper">
                 <h2>Требования</h2>
                 <div class="terms_container">
@@ -125,7 +126,7 @@
                 </div>
             </div>
         </section>
-        <section class="request">
+        <section class="request" id="request">
             <div class="wrapper">
                 <div class="request_container">
                     <h2>Подать заявку</h2>
@@ -134,11 +135,11 @@
                 </div>
             </div>
         </section>
-        <section class="contacts wrapper">
+        <section class="contacts wrapper" id="contacts">
             <h2>Контакты</h2>
             <div class="contacts_container">
                 <div class="contacts_map">
-                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A67cc6275040458501c82318f5800bcf5509c253899563f8a4f4431208acf84bc&amp;width=100%25&amp;height=620&amp;lang=ru_RU&amp;scroll=false"></script>
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A67cc6275040458501c82318f5800bcf5509c253899563f8a4f4431208acf84bc&amp;source=constructor&amp;scroll=false" width="100%" height="620" frameborder="0"></iframe>
                 </div>
                 <div class="contacts_info">
                     <div class="contacts_row contacts_phone">
@@ -161,6 +162,37 @@
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="wrapper footer_container">
+            <div class="footer_logo">Алиса</div>
+            <div class="footer_content">
+                <ul class="footer_menu">
+                    <li><a href="#terms">Условия работы</a></li>
+                    <li><a href="#about">О салоне</a></li>
+                    <li><a href="#requirements">Требования</a></li>
+                    <li><a href="#request">Подать заявку</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+                <div class="footer_contacts">
+                    <div class="contacts_row contacts_phone">
+                        <img src="images/icon_phone.svg" alt="">
+                        <a href="tel:+79134318778">+7 913 431 87 78</a>
+                    </div>
+                    <div class="contacts_row contacts_address">
+                        <img src="images/icon_address.svg" alt="">
+                        <span>Кемерово, Терешковой 20</span>
+                    </div>
+                    <div class="contacts_social">
+                        <img src="images/icon_vk.svg" alt="">
+                        <img src="images/icon_facebook.svg" alt="">
+                        <img src="images/icon_inst.svg" alt="">
+                        <img src="images/icon_wa.svg" alt="">
+                        <img src="images/icon_viber.svg" alt="">
+                        <img src="images/icon_telegram.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
